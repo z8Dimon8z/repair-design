@@ -372,6 +372,14 @@ img {
         height: 2px;
         background-color: #E3B873;
         margin: 0 10px; }
+  .section__subtitle {
+    margin: 1rem auto;
+    max-width: 52.7rem;
+    text-align: center;
+    font-family: 'FuturaBookC', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.92rem;
+    color: #363636; }
 
 .header {
   position: fixed;
@@ -561,7 +569,9 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .card--min {
+    display: none; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
