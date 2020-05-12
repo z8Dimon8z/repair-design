@@ -373,6 +373,7 @@ img {
         background-color: #E3B873;
         margin: 0 10px; }
   .section__subtitle {
+    text-transform: none;
     margin: 1rem auto;
     max-width: 52.7rem;
     text-align: center;
