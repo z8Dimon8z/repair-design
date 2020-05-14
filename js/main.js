@@ -27,4 +27,23 @@ $(document).ready(function () {
     closeBtn.on('click', function(){
       modal.toggleClass('modal--visible');
     });
+// прокрутка страницы наверх
+    $(function (){
+      $("#back-top").hide();
+  
+      $(window).scroll(function (){
+        if ($(this).scrollTop() > 700){
+          $("#back-top").fadeIn();
+        } else{
+          $("#back-top").fadeOut();
+        }
+      });
+  
+      $("#back-top a").click(function (){
+        $("body,html").animate({
+          scrollTop:0
+        }, 2000);
+        return false;
+      });
+    });
 });
