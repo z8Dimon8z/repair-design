@@ -749,6 +749,9 @@ img {
     display: none; }
   .swiper-slide__image {
     margin-top: 2.36rem; }
+  .swiper-slide__image {
+    width: 340px;
+    height: 202px; }
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
