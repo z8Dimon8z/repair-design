@@ -621,13 +621,18 @@ img {
 .swiper-button-next {
   background: url(../img/arow-next.svg) no-repeat center; }
 
-.swiper__image {
-  width: 100%;
-    width-height: 100%; }
-
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+.swiper-slide__images {
+  overflow: hidden; }
+
+.swiper-slide__image {
+  height: 483px;
+  width: 679px;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .types__section-title {
   margin-bottom: 2rem; }
