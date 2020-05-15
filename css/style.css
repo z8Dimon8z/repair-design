@@ -602,6 +602,9 @@ img {
     color: #E3B873;
     text-transform: uppercase;
     margin-bottom: 0.64rem; }
+  .swiper-slide__value {
+    font-size: 1.07rem;
+    line-height: 1.43rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
