@@ -588,6 +588,9 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.projects {
+  background: #131313 url(../img/bg-projets.svg) no-repeat center/cover; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
