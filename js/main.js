@@ -68,5 +68,73 @@ $(document).ready(function () {
       bullets.css('left', prev.width() + 10)
 
       new WOW().init();
+
+      // валидация формы модального окна
+      $('.modal__form').validate({
+        errorClass: "invalid",
+        rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+            required: true,
+            minlength: 2
+          },
+
+          userPhone: "required",
+          // compound rule
+          userEmail: {
+            required: true,
+            email: true
+          }
+        },
+          // правило сообщений
+          messages: {
+            userName: {
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух символов"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+              required: "Обязательно укажите E-mail",
+              email: "Введите в формате: name@domain.com"
+            }
+          }
+        
+      });
+
+      // маска для телефона
+      $('[type=tel]').mask('+7(000) 000-00-00');
+
+      // валидация формы control
+
+      $('.control__form').validate({
+        errorClass: "invalid",
+        rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+            required: true,
+            minlength: 2
+          },
+
+          userPhone: "required",
+          // compound rule
+          userEmail: {
+            required: true,
+            email: true
+          }
+        },
+          // правило сообщений
+          messages: {
+            userName: {
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух символов"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+              required: "Обязательно укажите E-mail",
+              email: "Введите в формате: name@domain.com"
+            }
+          }
+        
+      });
       
 });

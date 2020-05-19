@@ -360,6 +360,8 @@ template {
     color: #ffffff; }
   .input--light::placeholder {
     color: #ffffff; }
+  .input--dark {
+    color: #131313; }
 
 .policy__chekbox {
   opacity: 0;
@@ -378,6 +380,13 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+
+label.invalid {
+  color: red;
+  margin-top: 5px; }
+
+input.invalid {
+  border-bottom: 1px solid red; }
 
 .container {
   width: 85%;
@@ -783,9 +792,11 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
+    .modal__input-group:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
