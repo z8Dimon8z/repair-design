@@ -136,5 +136,38 @@ $(document).ready(function () {
           }
         
       });
+
+      // валидация формы footer
+
+      $('.footer__form').validate({
+        errorClass: "invalid",
+        rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+            required: true,
+            minlength: 2
+          },
+
+          userPhone: "required",
+          // compound rule
+          userEmail: {
+            required: true,
+            email: true
+          }
+        },
+          // правило сообщений
+          messages: {
+            userName: {
+              required: "Имя обязательно",
+              minlength: "Имя не короче двух символов"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+              required: "Обязательно укажите E-mail",
+              email: "Введите в формате: name@domain.com"
+            }
+          }
+        
+      });
       
 });
