@@ -97,7 +97,21 @@ $(document).ready(function () {
               required: "Обязательно укажите E-mail",
               email: "Введите в формате: name@domain.com"
             }
-          }
+          },
+
+          submitHandler: function(form) {
+             $.ajax({
+               type: "POST",
+               url: "send.php",
+               data: $(form).serialize(),
+               success: function (response) {
+                 console.log('Ajax сработал. Ответ сервера:' + response);
+                 alert('форма отправлена, мы свяжимся с вами в течении 15 минут');
+                 $(form)[0].reset();
+                 modal.removeClass('modal--visible');
+               }
+             });
+           },
         
       });
 
@@ -166,7 +180,7 @@ $(document).ready(function () {
               required: "Обязательно укажите E-mail",
               email: "Введите в формате: name@domain.com"
             }
-          }
+          },
         
       });
       
